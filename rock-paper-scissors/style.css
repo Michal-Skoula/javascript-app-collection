@@ -1,0 +1,76 @@
+:root {
+  --background: #323232;
+  --bg-buttons: #504f4f;
+  --player-clr: #ff5b5b;
+  --enemy-clr: #6464ef;
+  --tie-clr: #b81eb8;
+  --text: #ebebeb;
+
+  --font: Arial, Helvetica, sans-serif;
+  
+}
+html {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font);
+  display: grid;
+  place-items: center;
+  margin:0;
+}
+h1 {
+  text-align: center;
+}
+
+button {
+  border:none;
+  background-color: var(--bg-buttons);
+  color:var(--text);
+  transition: transform 150ms ease-in-out, background-color 150ms, opacity 150ms;
+  cursor:pointer;
+  font-size:20px;
+}
+button:not(#reset) {
+  aspect-ratio: 1/1;
+  padding:32px;
+  border-radius: 100%;
+  font-size:60px;
+}
+button:hover {
+  opacity: 0.8;
+}
+button#reset {
+  padding:16px 0;
+  border-radius:100px;
+}
+.buttons-area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 100%;
+  justify-content: center;
+  gap:32px;
+  margin-bottom:32px;
+}
+.results-area {
+  display: grid;
+  align-content: center;
+  min-width:300px;
+  text-align: center;
+}
+#result {
+  margin:0;
+  color:var(--player-clr);
+}
+.winner {
+  transform: scale(1.15) !important;
+}
+.loser {
+  transform: scale(0.85);
+}
