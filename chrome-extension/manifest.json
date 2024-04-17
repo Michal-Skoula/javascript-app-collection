@@ -1,0 +1,11 @@
+{
+  "name": "Test Extension",
+  "version": "1.0.0",
+  "description": "Just testing it out",
+  "manifest_version": 3,
+  "author": "Michal Škoula",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "Hey mom!"
+  }
+}

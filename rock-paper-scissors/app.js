@@ -117,6 +117,4 @@ resetBtn.addEventListener('click', function() {
   resetResultStyles();
 });
 
-// Notes:
-
 
