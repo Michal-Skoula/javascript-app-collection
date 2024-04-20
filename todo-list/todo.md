@@ -1,0 +1,3 @@
+- [] Implement tags
+- [] Add the ability to filter the todo list however you'd like
+- [] Make dates a lot more readable
